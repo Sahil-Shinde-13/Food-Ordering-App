@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+.skeleton-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 270px;
+  height: 320px;
+  margin: 30px;
+}
+
+@media (max-width: 768px) {
+  .skeleton-card {
+      width: 100%;
+      margin: 10px 0;
+  }
+}

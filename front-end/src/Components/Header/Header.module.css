@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.logoText {
+  position: relative;
+  top: -12px;
+}
+
+.logoImg {
+  width: 80px;
+  cursor: pointer;
+}
+
+.menuList {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.menuList li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menuList li:hover {
+  color: darkred;
+  transform: translateY(-3px);
+}
+
+.logoImg:hover {
+  transform: translateY(-3px);
+}
+
+.menuIcon {
+  display: none;
+  width: 30px; /* Increased width */
+  height: 30px; /* Added height */
+  cursor: pointer;
+  z-index: 1001; /* Ensures the icon is above the mobile menu */
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .menuList {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 15px 0;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding-top: 80px;
+  }
+
+  .mobileMenu.show {
+    right: 0;
+  }
+
+  .menuList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+  }
+
+  .menuList li {
+    margin: 25px 0;
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuIcon {
+    display: block;
+    width: 40px; /* Increased width */
+    height: 40px; /* Increased height */
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+.faq{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.accordion1{
+    border: 1px solid black;
+    
+}
+.accordion2{
+    border: 1px solid black;
+   
+}
+.accordion3{
+    border: 1px solid black;
+}

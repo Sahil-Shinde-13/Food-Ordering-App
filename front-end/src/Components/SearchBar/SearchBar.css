@@ -1,0 +1,40 @@
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 120PX;
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+.inputContainer{
+    display: flex;
+    gap: 10px;
+}
+button{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+input{
+    width: 200px;
+    border-radius: 8px;
+}
+
+input:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}   
+
+@media (max-width: 768px) {
+    .searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }    
+
+}
+
